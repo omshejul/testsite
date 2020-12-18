@@ -34,14 +34,15 @@
         
         <img src="https://images.mygoodtimes.in/wp-content/uploads/2018/08/31063759/iStock-643845180-1.jpg" alt="maggie photo" width="500">
         <br> <hr>
-        <a href="https://www.youtube.com" target ="_blank"><font size="10">Youtube</font></a>
+        <a href="https://www.youtube.com" target ="_blank"><font size="5">Youtube</font></a>
         <br><br>
         <!--<iframe width="800" height="1066" src="https://www.youtube.com/embed/va3JHUlMZHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
         <hr>
+        <p>Required field are followed by *</p>
         <form action="">
             <h2>Your Contact Details:</h2>
             <p>
-                Name <input type="text" name="name">
+                Name <input type="text" name="name" required ><font color="red">*</font>
             </p>    
             <p>
                 <!-- fieldset is used to add box and legend is used to give heading to that box-->
@@ -54,7 +55,7 @@
                 &emsp;&emsp;Prefer Not To Say <input type="radio" name="gender" id="nun"></p>
             </fieldset>
             <p>Address: <textarea name="address" id="address" cols="50" rows="5"></textarea></p>
-            <p>Email: <input type="email" name="email" id="email"></p>
+            <p>Email: <input type="email" name="email" id="email" required ><font color="red">*</font></p>
             <p>Pincode: <input type="number" name="pincode" id="pincode" min="111111" max="999999"></p>
             <p>Favourite Color: <input type="color" name="color" id="color"></p>
             <h2>Payment Information</h2>
@@ -65,7 +66,7 @@
                     <option value="master_card">Master Card</option>
                     <option value="rupay">RuPay</option>
                 </select></p>
-            <p>Card Number: <input type="number" name="" id="">
+            <p>Card Number: <input type="number" name="" id="" required>*
             </p>
             <p>Expiration Date <input type="date" name="exp_date" id="exp_date"></p>
             <p>CVV: <input type="password" name="cvv" id="cvv"> </p>
