@@ -1,9 +1,9 @@
 <html>
-    <title>Maggie Recipe 2</title>
-    <h1><font size="10" align=center>Maggie Recipe </font></h1>
+    <title>Maggie Recipe</title>
+    <h1>Maggie Recipe</h1>
     <br>
 
-    <body><font size="5">
+    <body>
         Ingredients:
         <ul>
             <li>Maggie</li>
@@ -20,13 +20,47 @@
             <li>Heat the water on high flame </li>
             <li>Add maggie masala to the pan</li>
             <li>Add maggie to the pan</li>
-            <li>Cook for 5 minutes </li>
+            <li>Cook for 
+                <select>
+                    <option value="2 Min">2 Min🧐 </option>
+                    <option value="5 Min">5 Min</option>
+                    <option value="10 Min">10 Min😋</option>
+                    <option value="20 Min">20 Min</option>
+                    <option value="1 hour">1 hour😬</option>
+                </select> </li>
+            
         </ol>
+
+        
         <img src="https://images.mygoodtimes.in/wp-content/uploads/2018/08/31063759/iStock-643845180-1.jpg" alt="maggie photo" width="500">
         <br> <hr>
         <a href="https://www.youtube.com" target ="_blank"><font size="10">Youtube</font></a>
         <br><br>
-        <iframe width="800" height="1066" src="https://www.youtube.com/embed/va3JHUlMZHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    </font></body>
+        <!--<iframe width="800" height="1066" src="https://www.youtube.com/embed/va3JHUlMZHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+        <hr>
+        <form action="">
+            <h2>Your Contact Details:</h2>
+            <p>
+                Name <input type="text" name="name">
+            </p>    
+            <p>
+                <!-- fieldset is used to add box and legend is used to give heading to that box-->
+            <fieldset>
+                <legend>Gender</legend>
+                <!-- &emsp; is for adding spaces-->
+                <p> Male <input type="radio" name="gender" id="male">                   
+                &emsp;&emsp;Female <input type="radio" name="gender" id="female">
+                &emsp;&emsp;Other <input type="radio" name="gender" id="other">
+                &emsp;&emsp;Prefer Not To Say <input type="radio" name="gender" id="nun"></p>
+            </fieldset>
+            <p>Address: <textarea name="address" id="address" cols="50" rows="5"></textarea></p>
+            <p>Email: <input type="email" name="email" id="email"></p>
+            <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+            <p>Favourite Color: <input type="color" name="color" id="color"></p>
+            <p></p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+        </form>
+    </body>
 </html>
