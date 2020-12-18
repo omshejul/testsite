@@ -55,12 +55,25 @@
             </fieldset>
             <p>Address: <textarea name="address" id="address" cols="50" rows="5"></textarea></p>
             <p>Email: <input type="email" name="email" id="email"></p>
-            <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+            <p>Pincode: <input type="number" name="pincode" id="pincode" min="111111" max="999999"></p>
             <p>Favourite Color: <input type="color" name="color" id="color"></p>
-            <p></p>
+            <h2>Payment Information</h2>
+            <p>Card Type 
+                <select name="card_type" id="card_type">
+                    <option value="">~~Select Card Type~~</option>
+                    <option value="visa">Visa</option>
+                    <option value="master_card">Master Card</option>
+                    <option value="rupay">RuPay</option>
+                </select></p>
+            <p>Card Number: <input type="number" name="" id="">
+            </p>
+            <p>Expiration Date <input type="date" name="exp_date" id="exp_date"></p>
+            <p>CVV: <input type="password" name="cvv" id="cvv"> </p>
             <p> </p>
             <p> </p>
             <p> </p>
+            <p> </p>
+            <p> &emsp;&emsp;    <input type="submit" value="Submit"></p>
         </form>
     </body>
 </html>
